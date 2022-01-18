@@ -1,0 +1,272 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ css vriable
+
+ :root{
+--navbar-height: 30px;     
+ }
+
+ /*navigation bar*/
+ #navbar{
+     display: flex;
+     align-items: center;
+     position: absolute;
+     top: 0px;
+    
+     
+ }
+ #navbar::before{
+    content: "";
+    background-color: coral;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+    opacity: 0.8;
+}
+  /*navigation bar: logo and image*/
+  #logo{
+      margin: 8px 5px;
+  }
+  #logo img{
+      margin: 3px 4px;
+      height: 65px;
+  }
+  /*navigation bar: list styling*/
+ 
+#navbar ul{
+    display: flex; 
+    font-family: 'Baloo Paaji 2', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2rem;
+
+}
+#navbar ul li a{
+    color: rgb(19, 0, 0);
+    display: block;
+    text-decoration: none;
+    border-radius: 30px 30px;
+    padding: 5px 15px;
+    font-family: 'Source Serif 4', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    
+    
+   
+    
+}
+#navbar ul li a:hover{
+    color: rgb(10, 0, 0);
+    background-color: rgb(233, 208, 192);
+    
+    
+    
+}
+ 
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 200px;
+    font-size: 1rem;
+
+}
+#home::before{
+    content: "";
+    background: url('bailey.jpg') no-repeat center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 470px;
+    z-index: -1;
+    opacity: 10;
+    
+}
+#home h1{
+    color: rgb(8, 8, 95);
+    text-align: center;
+    font-family: 'Pushster', cursive;
+    font-size: 3rem;
+}
+#home p{
+    color: rgb(7, 0, 0);
+     text-align: center;
+     font: 3 rem;
+     font-family: 'Balthazar', serif;
+    
+}
+
+#home .btn:hover{
+   background-color: darkgray;
+   color: black;
+   border-color: black;
+}
+/* Services Section */
+
+#services{
+    margin: 30px;
+    display: flex; 
+   background-color: rgb(245, 232, 216);
+
+}
+#services .box{
+    border: 2px solid rgb(185, 122, 59);
+    border-radius: 25px;
+    background-color: rgb(228, 217, 204);
+    padding: 5px;
+    margin: 8px 8px;
+    text-align: center;
+    
+  
+}
+
+#services .box:hover{
+    color: rgb(114, 22, 72);
+}
+
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+    
+}
+
+#services .box p{
+    font-family: 'Montserrat', sans-serif;
+
+}
+#services{}
+#services{}
+
+/* clients section */
+#client-section{
+    height: 300px;
+    position: relative;
+
+
+}
+#client-section::before{
+    content: "";
+    background: url('bailey1.jpg')no-repeat center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.client-item{
+    padding: 40;
+   
+    
+}
+#clients img{
+    height: 60px;
+   
+   
+}
+/*contact Section*/
+#contact{
+    position: relative;
+
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+   
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    
+}
+
+
+
+footer{
+    background: rgb(8, 8, 8);
+    color: rgb(245, 240, 245);
+    padding: 10px 20px;
+
+}
+/* utility classes */
+.h-primary{
+    font-size: 3rem;
+    padding: 15px;
+    font-family: 'Pushster', cursive;
+    
+   
+}
+.h-secondry{
+    font-size: 2rem;
+    padding: 15px;
+    font-family: 'Pushster', cursive;
+    
+}
+.btn{
+    padding: 5px 15px;
+    border: 3px solid rgb(245, 176, 112);
+    background-color: rgb(177, 114, 33);
+    color: lavenderblush;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;   
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
